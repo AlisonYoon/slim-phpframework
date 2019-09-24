@@ -1,16 +1,12 @@
 <?php
-
 use Slim\App;
-
-return function (App $app) {
+return function (App $app) {    //this is a function Factory
     $container = $app->getContainer();
-
     // view renderer
-    $container['renderer'] = function ($c) { //this is a function Factory
+    $container['renderer'] = function ($c) {
         $settings = $c->get('settings')['renderer'];
         return new \Slim\Views\PhpRenderer($settings['template_path']); //It's instantiating an object and pass something in it
     };
-
     // monolog
     $container['logger'] = function ($c) {
         $settings = $c->get('settings')['logger'];
@@ -19,7 +15,4 @@ return function (App $app) {
         $logger->pushHandler(new \Monolog\Handler\StreamHandler($settings['path'], $settings['level']));    //Lots of passing-in happening here.
         return $logger;
     };
-
-    $container['HomepageController'] = new \Example\Factories\HomepageControllerFactory();
-
-};
+}

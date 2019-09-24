@@ -4,9 +4,18 @@ namespace Example;
 
 use Slim\Http\Request;
 use Slim\Http\Response;
+use Slim\Views\PhpRenderer;
 
 class Foo
 {
+
+    public $renderer;
+
+    public function __construct(PhpRenderer $renderer)
+    {
+        $this->renderer = $renderer;
+    }
+
     public static function doThing() {
         echo 'foo is running';
     }
@@ -16,6 +25,7 @@ class Foo
 //        echo "<br>";
 //        var_dump($args);
 //        echo "<br>";
-        $response->write('hello');
+//        $response->write('hello');
+        $this->renderer->render($response, 'index.phtml');
     }
 }

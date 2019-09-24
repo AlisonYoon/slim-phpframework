@@ -69,7 +69,7 @@ class BaseTestCase extends TestCase
         }
 
         // Register routes
-        $routes = require __DIR__ . '/../../src/routes.php';
+        $routes = require __DIR__ . '/../../src/routes-theory.php';
         $routes($app);
 
         // Process the application

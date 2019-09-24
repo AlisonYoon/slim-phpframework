@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df0d439e-6d56-4562-b4a1-b4489a0a2d73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Controllers/HomepageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Factories/HomepageControllerFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/FooFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dependencies-theory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Foo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Foo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/dependencies.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,6 +88,11 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/classes/Controllers" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -114,7 +125,9 @@
       <workItem from="1557424385126" duration="994000" />
       <workItem from="1569321483608" duration="408000" />
       <workItem from="1569322084523" duration="1583000" />
-      <workItem from="1569327610503" duration="4316000" />
+      <workItem from="1569327610503" duration="4597000" />
+      <workItem from="1569335797216" duration="945000" />
+      <workItem from="1569337877733" duration="2756000" />
     </task>
     <servers />
   </component>
