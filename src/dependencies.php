@@ -26,6 +26,8 @@ return function (App $app) {
         return $db;
     };
 
-    $container['HomepageController'] = new \Example\Factories\HomepageControllerFactory();
+    $container['HomepageController'] = new \Example\Factories\HomepageControllerFactory();  //adding a Controller Factory
+
+    $container['StudentModel'] = new \Example\Factories\StudentModelFactory();  //adding a Model Factory
 
 };

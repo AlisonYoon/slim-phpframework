@@ -3,6 +3,7 @@
 
 namespace Example\Controllers;
 
+use Example\Models\StudentModel;
 use Slim\Http\Request;
 use Slim\Http\Response;
 use Slim\Views\PhpRenderer;
@@ -16,9 +17,10 @@ class HomepageController
      * HomepageController constructor.
      * @param $renderer
      */
-    public function __construct(PhpRenderer $renderer)
+    public function __construct(PhpRenderer $renderer, StudentModel $studentModel)  //second argument here is the model. The model now is the dependency of the controller.
     {
         $this->renderer = $renderer;
+        $this->studentModel = $studentModel;
     }
 
     public function __invoke(Request $request, Response $response, $args)
