@@ -16,4 +16,11 @@ return [
             'level' => \Monolog\Logger::DEBUG,
         ],
     ],
+
+    'db' => [
+        'host' => '192.268.20.20',
+        'dbname' => 'example',
+        'username' => 'root',
+        'password' => ''
+    ]
 ];

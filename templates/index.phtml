@@ -29,6 +29,12 @@
         <h1>Slim</h1>
         <div>a microframework for PHP</div>
 
+        <?php
+        foreach($students as $student) {
+            echo $student . '<br>';
+        }
+        ?>
+
         <?php if (isset($name)) : ?>
             <h2>Hello <?= htmlspecialchars($name); ?>!</h2>
         <?php else: ?>
