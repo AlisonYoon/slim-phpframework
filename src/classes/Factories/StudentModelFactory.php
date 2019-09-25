@@ -6,6 +6,7 @@ namespace Example\Factories;
 
 use Example\Models\StudentModel;
 
+
 class StudentModelFactory
 {
     public function __invoke($container)

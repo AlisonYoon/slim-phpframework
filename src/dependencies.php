@@ -22,7 +22,7 @@ return function (App $app) {
 
     $container['db'] = function($container){
         $dbConfig = $container->get('settings')['db']; //get('settings') gives you everything in the settings.php file in an array format
-        $db = new PDO('mysql:host=' . $dbConfig['host'] . ';dbname=' . $dbConfig['dbname'] . $dbConfig['username'] . $dbConfig['password']);
+        $db = new PDO('mysql:host=' . $dbConfig['host'] . ';dbname=' . $dbConfig['dbname'] , $dbConfig['username'] , $dbConfig['password']);
         return $db;
     };
 
