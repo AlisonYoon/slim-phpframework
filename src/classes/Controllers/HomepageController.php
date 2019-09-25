@@ -27,7 +27,11 @@ class HomepageController
     {
         //do things such as validation, authentication and getting data from the model
 
-        $viewData = ['students'=> ['Matt', 'Tom', 'Liz']];
+//        $viewData = ['students'=> ['Matt', 'Tom', 'Liz']];
+
+//        $viewData = $this->studentModel->getStudents();  //now that there's model, use that instead of the array above.
+
+        $viewData = ['students' => $this->studentModel->getStudent()]; // now this way, there's a variable called $students
 
 //        $this->renderer->render($response, 'index.phtml', ['name'=>'mike']); //third argument is an optional param which takes an associative array. This case, it creates variable $name with 'mike' as a value
 

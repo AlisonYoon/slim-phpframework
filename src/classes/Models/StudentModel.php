@@ -17,5 +17,11 @@ class StudentModel
         $this->db = $db;
     }
 
+    public function getStudents()
+    {
+        $sql = 'SELECT `name` FROM students;';
+        $query = $this->db->query($sql);
+        return $query->fetchAll();
+    }
 
 }
