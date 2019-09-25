@@ -23,7 +23,7 @@ class HomepageController
 
     public function __invoke(Request $request, Response $response, $args)
     {
-        $this->renderer->render($response, 'index.phtml');
+        $this->renderer->render($response, 'index.phtml', ['name'=>'mike']); //third argument is an optional param which takes an associative array. This case, it creates variable $name with 'mike' as a value
     }
 
 

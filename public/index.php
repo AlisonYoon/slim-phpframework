@@ -26,7 +26,7 @@ $middleware = require __DIR__ . '/../src/middleware.php';
 $middleware($app);
 
 // Register routes
-$routes = require __DIR__ . '/../src/routes-theory.php';
+$routes = require __DIR__ . '/../src/routes.php';
 $routes($app);
 
 // Run app
