@@ -18,7 +18,7 @@ return [
 
         'db' => [
             'host' => '192.168.20.20',
-            'dbname' => 'example',
+            'dbname' => 'users',
             'username' => 'root',
             'password' => ''
         ]

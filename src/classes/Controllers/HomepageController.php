@@ -4,6 +4,7 @@
 namespace Example\Controllers;
 
 use Example\Models\StudentModel;
+use Example\Validators\IndexValidator;
 use Slim\Http\Request;
 use Slim\Http\Response;
 use Slim\Views\PhpRenderer;
@@ -32,6 +33,20 @@ class HomepageController
 //        $viewData = $this->studentModel->getStudents();  //now that there's model, use that instead of the array above.
 
         $viewData = ['students' => $this->studentModel->getStudent()]; // now this way, there's a variable called $students
+
+        # $_POST
+//        $post = $request->getParsedBody(); //getParsedBody() : it understands what data form it gets, and then it transforms into php array. (ie. if it gets JSON format, it will json_decode it)
+
+        # $_GET['id']
+//        $request->getParam('id'); //get specific one
+
+        # $_GET
+        $get = $request->getParams(); //get everything sent
+
+        if(!IndexValidator::validateStuff($get)) { //because validateStuff is static, you can just use it here without instantiating IndexValidator object.
+            return $response->withStatus(500);
+        }
+
 
 //        $this->renderer->render($response, 'index.phtml', ['name'=>'mike']); //third argument is an optional param which takes an associative array. This case, it creates variable $name with 'mike' as a value
 
