@@ -52,7 +52,6 @@ class HomepageController
 
 //        $this->renderer->render($response, 'index.phtml', $viewData);
         $post = $request->getParsedBody();
-        var_dump($post);
         $this->renderer->render($response, 'newIndex.phtml');
 
 //        return $response->withJson($viewData); //return result in JSON format. Also, it removes the dependency on PhpRenderer.
